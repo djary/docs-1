@@ -88,7 +88,7 @@ The input dataset class, `SentimentData`, has a `string` for user comments (`Sen
 |Wow... Loved this place.              |    1     |
 |Service was very prompt.              |    1     |
 
-`SentimentPrediction` is the prediction class used after the model training. It inherits from `SentimentData` for displaying the `SentimentText` with the predictions. `SentimentPrediction` has a single boolean (`Sentiment`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with the split out test dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, training data, the predicted values, and the model are used.
+`SentimentPrediction` is the prediction class used after the model training. It inherits from `SentimentData` for displaying the `SentimentText` with the predictions. `SentimentPrediction` has a single boolean (`Prediction`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with the split out test dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, training data, the predicted values, and the model are used.
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
